@@ -39,11 +39,14 @@ function ui_Update() {
 		}
 	})
 
-	if(currentActive > 1){
+	if(currentActive === 1){
+		previousbutton.disabled = true;
+	}else if(currentActive === circles.length){
+		nextbutton.disabled = true;
+	}else{
 		previousbutton.disabled = false;
+		nextbutton.disabled = false;
 	}
 
-	if(currentActive < 1){
-		nextbutton.disabled = true;
-	}
+	
 }
