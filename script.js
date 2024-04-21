@@ -31,6 +31,14 @@ function ui_Update() {
 		}
 	})
 
+	lines.forEach((line,index)=>{
+		if(index < currentActive-1){
+			line.classList.add("active");
+		}else{
+			line.classList.remove("active");
+		}
+	})
+
 	if(currentActive > 1){
 		previousbutton.disabled = false;
 	}
