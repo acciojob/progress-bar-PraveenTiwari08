@@ -35,7 +35,7 @@
 	margin:-20px;
 }
 
-.line .active{
+.line.active{
 	background:blue;
 }
 
