@@ -42,4 +42,8 @@ function ui_Update() {
 	if(currentActive > 1){
 		previousbutton.disabled = false;
 	}
+
+	if(currentActive < 1){
+		nextbutton.disabled = true;
+	}
 }
