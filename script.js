@@ -30,4 +30,8 @@ function ui_Update() {
 			circle.classList.remove("active");
 		}
 	})
+
+	if(currentActive > 1){
+		previousbutton.disabled = false;
+	}
 }
